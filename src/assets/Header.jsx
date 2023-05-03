@@ -5,10 +5,10 @@ const Header = () => {
         <>
             <header>
                 <nav>
-                    <div><img src="" alt="ポートフォリオ" /></div>
+                    <div><Link to={`/`}><img src="" alt="ポートフォリオ" /></Link></div>
                     <ul>
                         <li><Link to={`/`}>Works</Link></li>
-                        <li><Link to={`/About/`}>About</Link><br /></li>
+                        <li><Link to={`/About/`}>About</Link></li>
                         <li>Contact</li>
                     </ul>
                 </nav>

@@ -3,7 +3,7 @@ import Works from "./component/Works/index";
 import About from "./component/About/index";
 import SportsFestival from "./component/SportsFestival/index";
 import Enoshimabbq from "./component/Enoshimabbq/index"
-import IkimonoPalette from "./component/BannerDesign/index"
+import IkimonoPalette from "./component/IkimonoPalette/index"
 import BannerDesign from "./component/BannerDesign/index"
 // import header from "./assets/header";
 const App = () => {
