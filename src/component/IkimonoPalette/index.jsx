@@ -5,9 +5,9 @@ const IkimonoPalette = () => {
     return (
         <>
             <Header />
-            <main>
+            <main className="Ikimono">
                 <article>
-                    <section>
+                    <section className="keyvisual">
                         <h1>IkimonoPalette</h1>
                         <section>
                             <h2>

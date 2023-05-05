@@ -5,9 +5,9 @@ const Enoshimabbq = () => {
     return (
         <>
             <Header />
-            <main>
+            <main className="Enoshima">
                 <article>
-                    <section>
+                    <section className="keyvisual">
                         <h1>EnoshimaBBQ</h1>
                         <section>
                             <h2>

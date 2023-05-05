@@ -1,0 +1,168 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+/*-------------------------------------*/
+// :root {
+//   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+//   line-height: 1.5;
+//   font-weight: 400;
+
+//   color-scheme: light dark;
+//   color: rgba(255, 255, 255, 0.87);
+//   background-color: #242424;
+
+//   font-synthesis: none;
+//   text-rendering: optimizeLegibility;
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+//   -webkit-text-size-adjust: 100%;
+// }
+body{
+  background-color: #e1effb;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(37, 32, 32, 0.87);
+  // background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  // -webkit-font-smoothing: antialiased;
+  // -moz-osx-font-smoothing: grayscale;
+  // -webkit-text-size-adjust: 100%;
+  
+}
+
+*{
+  padding: 0;
+  margin: 0;
+}
+li{
+    list-style-type: none;
+  }
+  a {
+    font-weight: 500;
+    color: #646cff;
+    text-decoration: inherit;
+  }
+  a:hover {
+    color: #535bf2;
+  }
+  /*headerの中*/
+  header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position:fixed;
+    z-index: 99999;
+    width: 90%;
+    margin:3% 5%;
+    div{
+      img{
+        width: 120%;
+        height: auto;
+      }
+      width: 10%;
+      // padding:0 5% 0 0;
+
+    }
+  ul{
+    text-align: right;
+    position: absolute;
+    right: 0;
+    justify-content: space-around;
+    display: flex;
+    width: auto;
+    li{
+      font-size: 1.8vw;
+    padding:0 20% 0 0;
+  }}
+}
+.keyvisual{
+  height:60vw;
+  background-color: #d7d8f6;
+.catchcopy,h1{
+  font-weight: bold;
+  font-size:7vw;
+}
+
+}
+h2{
+  text-align: center;
+  margin: 5% 0;
+  font-size: 3vw;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+img{
+  width: 100%;
+  height: auto;
+}
+  /*Footer*/
+  footer{
+    margin-top: 8%;
+    padding: 5% 0;
+    width: 100%;
+    background-color: #D9D9D9;
+    div{
+  text-align: center;
+  margin: auto;
+  font-size: 1.4vw;
+  }}
+
+//ダークモードの時
+  // @media (prefers-color-scheme:dark) {
+  //   body {
+  //     color: #ffffff;
+  //     background-color: #213547;
+  //   }
+  //   a:hover {
+  //     color: #747bff;
+  //   }
+  //   button {
+  //     background-color: #f9f9f9;
+  //   }
+  //   .keyvisual{
+  //     background-color: #121682;
+  //   }
+  //   }

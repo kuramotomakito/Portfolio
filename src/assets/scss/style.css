@@ -1,0 +1,278 @@
+@charset "UTF-8";
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+/*-------------------------------------*/
+body {
+  background-color: #e1effb;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(37, 32, 32, 0.87);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+/*headerの中*/
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 99999;
+  width: 90%;
+  margin: 3% 5%;
+}
+header div {
+  width: 10%;
+}
+header div img {
+  width: 120%;
+  height: auto;
+}
+header ul {
+  text-align: right;
+  position: absolute;
+  right: 0;
+  justify-content: space-around;
+  display: flex;
+  width: auto;
+}
+header ul li {
+  font-size: 1.8vw;
+  padding: 0 20% 0 0;
+}
+
+.keyvisual {
+  height: 60vw;
+  background-color: #d7d8f6;
+}
+.keyvisual .catchcopy, .keyvisual h1 {
+  font-weight: bold;
+  font-size: 7vw;
+}
+
+h2 {
+  text-align: center;
+  margin: 5% 0;
+  font-size: 3vw;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/*Footer*/
+footer {
+  margin-top: 8%;
+  padding: 5% 0;
+  width: 100%;
+  background-color: #D9D9D9;
+}
+footer div {
+  text-align: center;
+  margin: auto;
+  font-size: 1.4vw;
+}
+
+.Works .keyvisual {
+  background-image: url(../img/keyvisual.png);
+  position: relative;
+  /*--スクロールをさせるため 高さ指定--*/
+  background-size: cover;
+  /*--背景画像のサイズ--*/
+  background-attachment: fixed;
+  /*--背景画像の固定--*/
+  background-repeat: no-repeat;
+  /*--背景画像の繰り返し--*/
+  background-position: center center;
+  /*--背景画像の位置--*/
+}
+.Works h1 {
+  font-size: 5vw;
+}
+.Works .catchcopy {
+  padding-top: 20%;
+}
+.Works .catchcopy span {
+  display: none;
+}
+.Works .catchcopy::after {
+  content: "|";
+  -webkit-animation: blink 1s infinite;
+          animation: blink 1s infinite;
+}
+.Works ul {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.Works li {
+  width: 40%;
+  position: relative;
+  z-index: 1;
+  margin: 5% 0;
+  filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.25));
+}
+.Works li div {
+  margin: 6% auto;
+}
+.Works li div p {
+  display: inline-block;
+  font-size: 1.3vw;
+  text-align: left;
+  color: rgba(37, 32, 32, 0.87);
+}
+.Works li div p span {
+  font-size: 1.2vw;
+}
+
+.About .name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: 8% auto;
+}
+.About .name h3 {
+  width: 140%;
+  font-size: 5vw;
+}
+.About .name h3 ruby {
+  padding-left: 5%;
+  font-size: 2vw;
+}
+.About .name p {
+  border-left: 2px solid #000;
+  padding: 1% 0 1% 3%;
+}
+.About .summary {
+  font-size: 1.3vw;
+  width: 80%;
+  margin: 0 auto;
+}
+.About .summary p {
+  line-height: 231%;
+  margin-bottom: 5%;
+}
+.About .summary .prof dl {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.About .summary .prof dl dt {
+  width: 15%;
+  padding: 2% 5% 2% 0;
+  margin: 0 0 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-weight: bold;
+}
+.About .summary .prof dl dd {
+  width: 65%;
+  padding: 2% 0 2% 0;
+  margin: 0 0 10px 0;
+}
+.About .summary .skills {
+  /*レスポンシブ用*/
+}
+.About .summary .skills h4 {
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 2vw;
+  margin: 5% 0 3% 0;
+}
+.About .summary .skills div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+}
+.About .summary .skills div dl {
+  display: flex;
+  align-items: center;
+  margin-right: 3%;
+  margin: 3% 2%;
+}
+.About .summary .skills div dt {
+  width: 5vw;
+  height: auto;
+  margin-right: 1%;
+}
+.About .summary .skills div dd {
+  width: 6vw;
+  height: auto;
+}
+.About .summary .skills div dd span {
+  font-size: 1vw;
+  position: absolute;
+}
+
+.About h1 {
+  padding-top: 30%;
+}/*# sourceMappingURL=style.css.map */

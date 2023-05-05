@@ -5,9 +5,9 @@ const BannerDesign = () => {
     return (
         <>
             <Header />
-            <main>
+            <main className="Banner">
                 <article>
-                    <section>
+                    <section className="keyvisual">
                         <h1>BannerDesign</h1>
                         <section>
                             <h2>

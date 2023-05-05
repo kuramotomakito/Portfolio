@@ -1,44 +1,49 @@
 import { Link } from "react-router-dom";
 import Header from "../../assets/Header"
 import Footer from "../../assets/Footer";
+import Sport from "../../assets/img/Sports.png"
+import Enoshima from "../../assets/img/Enoshima.png"
+import Ikimono from "../../assets/img/Ikimono.png"
+import Banner from "../../assets/img/Banner.png"
 const Works = () => {
-    return (
 
+    return (
         <>
             <Header />
-            <main>
+            <main className="Works">
                 <article>
-                    <section>
-                        <div>Have a Ball!</div>
+                    <section className="keyvisual">
+                        <div className="catchcopy"></div>
                         <h1>Portfolio by Minagi</h1>
                     </section>
                     <section>
                         <h2>Works</h2>
                         <ul>
-                            <li>
+                            <li className="sports">
                                 <Link to={`/SportsFestival/`}>
-                                    <img src="" alt="スポーツフェスティバル" />
-                                    <div>1年前期課題「スポーツフェスティバル公式サイト」</div>
+                                    <img src={Sport} alt="スポーツフェスティバル" />
+                                    <div><p><span>1年前期課題</span> <br />「スポーツフェスティバル公式サイト」</p></div>
                                 </Link>
                             </li>
-                            <li>
+                            <li className="enoshima">
                                 <Link to={`/Enoshimabbq/`}>
-                                    <img src="" alt="江ノ島BBQ特設サイト" />
+                                    <img src={Enoshima} alt="江ノ島BBQ特設サイト" />
                                     <div>
-                                        1年進級制作課題「江ノ島マリーナ「サンカフェ」公式サイト」
+                                        <p> <span>1年進級制作課題</span><br />「江ノ島マリーナ「サンカフェ」公式サイト」</p>
                                     </div>
                                 </Link>
                             </li>
-                            <li>
+                            <li className="ikimono">
                                 <Link to={`/IkimonoPalette/`}>
-                                    <img src="" alt="いきものパレット" />
-                                    <div>課外活動「学科横断プロジェクト『いきものパレット』」</div>
+                                    <img src={Ikimono} alt="いきものパレット" />
+                                    <div>
+                                        <p><span>課外活動</span><br />「学科横断プロジェクト『いきものパレット』」</p></div>
                                 </Link>
                             </li>
-                            <li>
+                            <li className="banner">
                                 <Link to={`/BannerDesign/`}>
-                                    <img src="" alt="バナー制作" />
-                                    <div>自主制作「バナー広告デザイン制作」</div>
+                                    <img src={Banner} alt="バナー制作" />
+                                    <div><p><span>自主制作</span><br />「バナー広告デザイン制作」</p></div>
                                 </Link>
 
                             </li>

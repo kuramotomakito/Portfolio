@@ -5,9 +5,9 @@ const SportsFestival = () => {
     return (
         <>
             <Header />
-            <main>
+            <main className="Sport">
                 <article>
-                    <section>
+                    <section className="keyvisual">
                         <h1>SportsFestival</h1>
                         <section>
                             <h2>
