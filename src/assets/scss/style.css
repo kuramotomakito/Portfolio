@@ -60,16 +60,17 @@ body {
 
 li {
   list-style-type: none;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 a {
   font-weight: 500;
-  color: rgb(39, 39, 39);
+  color: #878585;
   text-decoration: inherit;
 }
 
 a:hover {
-  color: #747474;
+  color: black;
 }
 
 /*headerの中*/
@@ -81,13 +82,10 @@ header {
   z-index: 99999;
   width: 90%;
   margin: 3% 5%;
+  padding-top: 2%;
 }
 header div {
   width: 10%;
-}
-header div img {
-  width: 120%;
-  height: auto;
 }
 header ul {
   text-align: right;
@@ -107,6 +105,7 @@ header ul li {
   background-color: #d7d8f6;
 }
 .keyvisual .catchcopy, .keyvisual h1 {
+  padding-left: 1%;
   font-weight: bold;
   font-size: 7vw;
 }
@@ -162,7 +161,7 @@ footer div {
   width: 90%;
 }
 .Works ul {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -176,6 +175,7 @@ footer div {
   filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.25));
 }
 .Works li div {
+  width: 110%;
   margin: 6% auto;
 }
 .Works li div p {
@@ -188,11 +188,27 @@ footer div {
   font-size: 1.2vw;
 }
 
+.About .keyvisual {
+  background-image: url(../img/aboutkey.jpg);
+  position: relative;
+  /*--スクロールをさせるため 高さ指定--*/
+  background-size: cover;
+  /*--背景画像のサイズ--*/
+  background-attachment: fixed;
+  /*--背景画像の固定--*/
+  background-repeat: no-repeat;
+  /*--背景画像の繰り返し--*/
+  background-position: center center;
+  /*--背景画像の位置--*/
+}
+.About h1 {
+  padding-top: 30%;
+}
 .About .name {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 80%;
+  width: 70%;
   margin: 8% auto;
 }
 .About .name h3 {
@@ -204,12 +220,13 @@ footer div {
   font-size: 2vw;
 }
 .About .name p {
+  font-size: 1.6vw;
   border-left: 2px solid rgb(39, 39, 39);
-  padding: 1% 0 1% 3%;
+  padding: 2% 0 2% 3%;
 }
 .About .summary {
   font-size: 1.3vw;
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
 }
 .About .summary p {
@@ -248,8 +265,6 @@ footer div {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 90%;
-  margin: 0 auto;
 }
 .About .summary .skills div dl {
   display: flex;
@@ -271,8 +286,21 @@ footer div {
   position: absolute;
 }
 
+.Sport .keyvisual {
+  background-image: url(../img/sportkey.jpg);
+  /*--スクロールをさせるため 高さ指定--*/
+  background-size: cover;
+  /*--背景画像のサイズ--*/
+  background-attachment: fixed;
+  /*--背景画像の固定--*/
+  background-repeat: no-repeat;
+  /*--背景画像の繰り返し--*/
+  background-position: center center;
+  /*--背景画像の位置--*/
+}
 .Sport h1 {
   padding-top: 30%;
+  color: rgb(220, 220, 220);
 }
 .Sport .summary {
   width: 65%;
@@ -304,8 +332,21 @@ footer div {
   justify-content: space-between;
 }
 
+.Enoshima .keyvisual {
+  background-image: url(../img/enoshimakey.jpg);
+  /*--スクロールをさせるため 高さ指定--*/
+  background-size: cover;
+  /*--背景画像のサイズ--*/
+  background-attachment: fixed;
+  /*--背景画像の固定--*/
+  background-repeat: no-repeat;
+  /*--背景画像の繰り返し--*/
+  background-position: center center;
+  /*--背景画像の位置--*/
+}
 .Enoshima h1 {
   padding-top: 30%;
+  color: rgb(220, 220, 220);
 }
 .Enoshima .summary {
   width: 70%;
@@ -333,8 +374,21 @@ footer div {
   justify-content: space-between;
 }
 
+.Ikimono .keyvisual {
+  background-image: url(../img/ikimonokey.jpg);
+  /*--スクロールをさせるため 高さ指定--*/
+  background-size: cover;
+  /*--背景画像のサイズ--*/
+  background-attachment: fixed;
+  /*--背景画像の固定--*/
+  background-repeat: no-repeat;
+  /*--背景画像の繰り返し--*/
+  background-position: center center;
+  /*--背景画像の位置--*/
+}
 .Ikimono h1 {
   padding-top: 30%;
+  color: rgb(220, 220, 220);
 }
 .Ikimono .summary {
   width: 70%;
@@ -357,6 +411,18 @@ footer div {
   margin: 5% 0 10% 0;
 }
 
+.Banner .keyvisual {
+  background-image: url(../img/bannerkey.jpg);
+  /*--スクロールをさせるため 高さ指定--*/
+  background-size: cover;
+  /*--背景画像のサイズ--*/
+  background-attachment: fixed;
+  /*--背景画像の固定--*/
+  background-repeat: no-repeat;
+  /*--背景画像の繰り返し--*/
+  background-position: center center;
+  /*--背景画像の位置--*/
+}
 .Banner h1 {
   padding-top: 30%;
 }

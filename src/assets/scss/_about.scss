@@ -1,10 +1,27 @@
 @import "_variables.scss";
 .About{
+    .keyvisual{
+        background-image:url(../img/aboutkey.jpg) ;
+    position: relative;
+
+    /*--スクロールをさせるため 高さ指定--*/
+    background-size: cover;
+    /*--背景画像のサイズ--*/
+    background-attachment: fixed;
+    /*--背景画像の固定--*/
+    background-repeat: no-repeat;
+    /*--背景画像の繰り返し--*/
+    background-position: center center;
+    /*--背景画像の位置--*/
+    }
+    h1{
+        padding-top: 30%;
+    }
     .name{
 display: flex;
 align-items: center;
 justify-content: space-between;
-width: 80%;
+width: 70%;
 margin: 8% auto;
     h3{
         width: 140%;
@@ -16,8 +33,9 @@ margin: 8% auto;
         }
     }
 p{
+    font-size: 1.6vw;
     border-left: 2px solid $base-black;
-    padding: 1% 0 1% 3%;
+    padding: 2% 0 2% 3%;
 }
     }
     .summary{
@@ -27,7 +45,7 @@ p{
             margin-bottom: 5%;
         }
 
-        width: 80%;
+        width: 70%;
         margin: 0 auto;
         .prof{
             dl{
@@ -62,8 +80,7 @@ p{
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
-                width: 90%;
-                margin: 0 auto;
+
                 // margin: 0 auto;
                 dl{
                     display: flex;

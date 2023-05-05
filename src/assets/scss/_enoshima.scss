@@ -1,8 +1,22 @@
 @import "_variables.scss";
 .Enoshima{
+.keyvisual{
+background-image:url(../img/enoshimakey.jpg);
 
+    /*--スクロールをさせるため 高さ指定--*/
+    background-size: cover;
+    /*--背景画像のサイズ--*/
+    background-attachment: fixed;
+    /*--背景画像の固定--*/
+    background-repeat: no-repeat;
+    /*--背景画像の繰り返し--*/
+    background-position: center center;
+    /*--背景画像の位置--*/
+}
     h1{
         padding-top: 30%;
+        color: $base-white;
+
     }
     .summary{
 

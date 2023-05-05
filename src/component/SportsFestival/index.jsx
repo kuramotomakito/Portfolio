@@ -4,6 +4,9 @@ import Footer from "../../assets/Footer";
 import sports from "../../assets/img/sports.jpg"
 import sports2 from "../../assets/img/sports2.jpg"
 import sports3 from "../../assets/img/sports3.jpg"
+import sports4 from "../../assets/img/sport4.jpg"
+import Typical from "react-typical";
+
 // import sportlink from "https://github.com/kuramotomakito/supofesu"
 const SportsFestival = () => {
     return (
@@ -12,7 +15,13 @@ const SportsFestival = () => {
             <main className="Sport">
                 <article>
                     <section className="keyvisual">
-                        <h1>SportsFestival</h1>
+                        <h1>
+                            <Typical
+                                steps={[
+                                    "SportsFestival."
+                                ]}
+                            />
+                        </h1>
                     </section>
                     <section className="summary">
                         <h2>
@@ -28,6 +37,7 @@ const SportsFestival = () => {
                         <div className="mockup">
                             <div><img src={sports2} alt="スポーツフェスティバルのサイト競技内容" /></div>
                             <div><img src={sports3} alt="スポーツフェスティバルのサイトアクセス" /></div>
+                            <div><img src={sports4} alt="スポーツフェスティバルのサイト注意事項" /></div>
                         </div>
 
                     </section>

@@ -5,6 +5,8 @@ import enoshima from "../../assets/img/enoshima.jpg"
 import enoshima2 from "../../assets/img/enoshima2.jpg"
 import enohshima3 from "../../assets/img/enoshima3.jpg"
 import enoshima4 from "../../assets/img/enoshima4.jpg"
+import Typical from "react-typical";
+
 const Enoshimabbq = () => {
     return (
         <>
@@ -12,7 +14,14 @@ const Enoshimabbq = () => {
             <main className="Enoshima">
                 <article>
                     <section className="keyvisual">
-                        <h1>EnoshimaBBQ</h1>
+                        <h1>
+                            <Typical
+                                steps={[
+                                    "EnoshimaBBQ."
+                                ]}
+                            />
+
+                        </h1>
                     </section>
                     <section className="summary">
                         <h2>
