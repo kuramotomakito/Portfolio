@@ -1,6 +1,28 @@
-.About{
-h1{
-    padding-top: 30%;
-}
+@import "variables.scss";
 
-}
+.Banner{
+    h1{
+        padding-top: 30%;
+    }
+    .summary{
+
+        width: 70%;
+        margin: 0 auto;
+    h2{
+        text-align: left;
+    }
+    dl{
+        font-size: 1.5vw;
+        margin: 3% 0;
+        display: flex;
+        // align-items: baseline
+        align-items: flex-end;
+        dt{
+            font-weight: bold;
+            margin-right: 1%;
+        }
+    }
+    p{
+        margin: 5% 0 10% 0 ;
+    }
+}}

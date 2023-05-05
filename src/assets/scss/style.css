@@ -43,12 +43,12 @@
 } */
 /*-------------------------------------*/
 body {
-  background-color: #e1effb;
+  background-color: #f6f6f6;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   color-scheme: light dark;
-  color: rgba(37, 32, 32, 0.87);
+  color: rgb(39, 39, 39);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
 }
@@ -64,12 +64,12 @@ li {
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: rgb(39, 39, 39);
   text-decoration: inherit;
 }
 
 a:hover {
-  color: #535bf2;
+  color: #747474;
 }
 
 /*headerの中*/
@@ -128,7 +128,7 @@ footer {
   margin-top: 8%;
   padding: 5% 0;
   width: 100%;
-  background-color: #D9D9D9;
+  background-color: #918e8e;
 }
 footer div {
   text-align: center;
@@ -151,17 +151,15 @@ footer div {
 }
 .Works h1 {
   font-size: 5vw;
+  color: rgb(220, 220, 220);
+}
+.Works h1 span:hover {
+  color: #909090;
 }
 .Works .catchcopy {
   padding-top: 20%;
-}
-.Works .catchcopy span {
-  display: none;
-}
-.Works .catchcopy::after {
-  content: "|";
-  -webkit-animation: blink 1s infinite;
-          animation: blink 1s infinite;
+  color: rgb(220, 220, 220);
+  width: 90%;
 }
 .Works ul {
   width: 80%;
@@ -184,7 +182,7 @@ footer div {
   display: inline-block;
   font-size: 1.3vw;
   text-align: left;
-  color: rgba(37, 32, 32, 0.87);
+  color: rgb(39, 39, 39);
 }
 .Works li div p span {
   font-size: 1.2vw;
@@ -206,7 +204,7 @@ footer div {
   font-size: 2vw;
 }
 .About .name p {
-  border-left: 2px solid #000;
+  border-left: 2px solid rgb(39, 39, 39);
   padding: 1% 0 1% 3%;
 }
 .About .summary {
@@ -273,6 +271,112 @@ footer div {
   position: absolute;
 }
 
-.About h1 {
+.Sport h1 {
   padding-top: 30%;
+}
+.Sport .summary {
+  width: 65%;
+  margin: 0 auto;
+}
+.Sport .summary h2 {
+  display: inline-block;
+  text-align: left;
+}
+.Sport .summary h2 span {
+  font-size: 1.5vw;
+}
+.Sport .summary dl {
+  font-size: 1.5vw;
+  margin: 3% 0;
+  display: flex;
+  align-items: flex-end;
+}
+.Sport .summary dl dt {
+  font-weight: bold;
+  margin-right: 1%;
+}
+.Sport .summary p {
+  margin: 5% 0 10% 0;
+}
+.Sport .summary .mockup {
+  margin: 5% 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Enoshima h1 {
+  padding-top: 30%;
+}
+.Enoshima .summary {
+  width: 70%;
+  margin: 0 auto;
+}
+.Enoshima .summary h2 {
+  text-align: left;
+}
+.Enoshima .summary dl {
+  font-size: 1.5vw;
+  margin: 3% 0;
+  display: flex;
+  align-items: flex-end;
+}
+.Enoshima .summary dl dt {
+  font-weight: bold;
+  margin-right: 1%;
+}
+.Enoshima .summary p {
+  margin: 5% 0 10% 0;
+}
+.Enoshima .summary .mockup {
+  margin: 5% 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Ikimono h1 {
+  padding-top: 30%;
+}
+.Ikimono .summary {
+  width: 70%;
+  margin: 0 auto;
+}
+.Ikimono .summary h2 {
+  text-align: left;
+}
+.Ikimono .summary dl {
+  font-size: 1.5vw;
+  margin: 3% 0;
+  display: flex;
+  align-items: flex-end;
+}
+.Ikimono .summary dl dt {
+  font-weight: bold;
+  margin-right: 1%;
+}
+.Ikimono .summary p {
+  margin: 5% 0 10% 0;
+}
+
+.Banner h1 {
+  padding-top: 30%;
+}
+.Banner .summary {
+  width: 70%;
+  margin: 0 auto;
+}
+.Banner .summary h2 {
+  text-align: left;
+}
+.Banner .summary dl {
+  font-size: 1.5vw;
+  margin: 3% 0;
+  display: flex;
+  align-items: flex-end;
+}
+.Banner .summary dl dt {
+  font-weight: bold;
+  margin-right: 1%;
+}
+.Banner .summary p {
+  margin: 5% 0 10% 0;
 }/*# sourceMappingURL=style.css.map */

@@ -5,6 +5,7 @@ import Sport from "../../assets/img/Sports.png"
 import Enoshima from "../../assets/img/Enoshima.png"
 import Ikimono from "../../assets/img/Ikimono.png"
 import Banner from "../../assets/img/Banner.png"
+import Typical from "react-typical";
 const Works = () => {
 
     return (
@@ -13,8 +14,12 @@ const Works = () => {
             <main className="Works">
                 <article>
                     <section className="keyvisual">
-                        <div className="catchcopy"></div>
-                        <h1>Portfolio by Minagi</h1>
+                        <div className="catchcopy"><Typical
+                            steps={[
+                                "My life is lovely story,happy and full of incident."
+                            ]}
+                        /></div>
+                        <h1>Portfolio by <span>Minagi</span></h1>
                     </section>
                     <section>
                         <h2>Works</h2>

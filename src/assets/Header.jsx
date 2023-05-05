@@ -8,7 +8,7 @@ const Header = () => {
                 <ul>
                     <li><Link to={`/`}>Works</Link></li>
                     <li><Link to={`/About/`}>About</Link></li>
-                    <li>Contact</li>
+                    <li><a href="mailto:22aw0134&#64;jec.ac.jp">Contact</a></li>
                 </ul>
             </header>
         </>

@@ -1,6 +1,10 @@
 // import { Link } from "react-router-dom";
 import Header from "../../assets/Header"
 import Footer from "../../assets/Footer";
+import enoshima from "../../assets/img/enoshima.jpg"
+import enoshima2 from "../../assets/img/enoshima2.jpg"
+import enohshima3 from "../../assets/img/enoshima3.jpg"
+import enoshima4 from "../../assets/img/enoshima4.jpg"
 const Enoshimabbq = () => {
     return (
         <>
@@ -9,19 +13,23 @@ const Enoshimabbq = () => {
                 <article>
                     <section className="keyvisual">
                         <h1>EnoshimaBBQ</h1>
-                        <section>
-                            <h2>
-                                <span>1年進級制作課題</span>「江ノ島マリーナ『サンカフェ』公式サイト」
-                            </h2>
-                            <dl>
-                                <dt>git:</dt>
-                                <dd>https://github.com/kuramotomakito/-BBQ</dd>
-                            </dl>
-                            <p>進級制作ではクライアントの企業様に来校していただき、実際の仕事の案件を課題として提出し評価していただきました。江ノ島マリーナで行われるBBQのLPページを1ページ制作し、海のイメージカラーとBBQの写真の色味を統一するのにとても苦労しました。またReactjsを初めて使いましたが、エラーを解消することができず、改良を続けています。</p>
-                            <div><img src="" alt="江ノ島マリーナBBQtop" /></div>
-                            <div><img src="" alt="江ノ島マリーナBBQ競技内容" /></div>
-                            <div><img src="" alt="江ノ島マリーナBBQアクセス" /></div>
-                        </section>
+                    </section>
+                    <section className="summary">
+                        <h2>
+                            <span>1年進級制作課題</span><br />「江ノ島マリーナ『サンカフェ』公式サイト」
+                        </h2>
+                        <dl>
+                            <dt>git:</dt>
+                            <dd>https://github.com/kuramotomakito/-BBQ</dd>
+                        </dl>
+                        <p>進級制作ではクライアントの企業様に来校していただき、実際の仕事の案件を課題として提出し評価していただきました。江ノ島マリーナで行われるBBQのLPページを1ページ制作し、海のイメージカラーとBBQの写真の色味を統一するのにとても苦労しました。またReactjsを初めて使いましたが、エラーを解消することができず、改良を続けています。</p>
+                        <div><img src={enoshima} alt="江ノ島マリーナBBQtop" /></div>
+                        <div className="mockup">
+                            <div><img src={enoshima2} alt="江ノ島マリーナBBQ競技内容" /></div>
+                            <div><img src={enohshima3} alt="江ノ島マリーナBBQアクセス" /></div>
+                            <div><img src={enoshima4} alt="江ノ島マリーナBBQアクセス" /></div>
+
+                        </div>
                     </section>
                 </article>
             </main>
