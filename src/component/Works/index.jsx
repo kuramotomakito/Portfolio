@@ -12,7 +12,7 @@ import { useTypewriter } from 'react-simple-typewriter'
 
 const Works = () => {
     const [text] = useTypewriter({
-        words: ["My life is lovely story,happy and full of incident"],
+        words: ["My life is lovely story,     happy and full of incident"],
 
         // typeSpeed: 20,
         onLoopDone: () => console.log("done from typewriter hook")
