@@ -452,6 +452,12 @@ footer div {
     background-size: 120%;
   }
 }
+@media screen and (max-width: 428px) {
+  .About .keyvisual {
+    background-size: 151%;
+    background-position: center 0px;
+  }
+}
 .About h1 {
   padding-top: 30%;
 }
@@ -470,6 +476,12 @@ footer div {
   text-align: center;
   margin: 5% 0;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+@media screen and (max-width: 428px) {
+  .About h2 {
+    font-size: 6vw;
+    margin: 15% 0 0 0;
+  }
 }
 .About .name {
   display: flex;
@@ -779,10 +791,31 @@ footer div {
   /*--背景画像の固定--*/
   background-repeat: no-repeat;
   /*--背景画像の繰り返し--*/
+  background-position: center center;
   /*--背景画像の位置--*/
+}
+@media screen and (max-width: 768px) {
+  .Banner .keyvisual {
+    background-size: 150%;
+  }
+}
+@media screen and (max-width: 428px) {
+  .Banner .keyvisual {
+    background-size: 300%;
+  }
 }
 .Banner h1 {
   padding-top: 30%;
+}
+@media screen and (max-width: 768px) {
+  .Banner h1 {
+    padding-top: 50%;
+  }
+}
+@media screen and (max-width: 428px) {
+  .Banner h1 {
+    padding-top: 80%;
+  }
 }
 .Banner .summary {
   width: 70%;
