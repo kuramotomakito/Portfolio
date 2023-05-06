@@ -1,7 +1,7 @@
 // import { Link } from "react-router-dom";
 import Header from "../../assets/Header"
 import Footer from "../../assets/Footer";
-import sportsmockup from "../../assets/img/sports.png"
+import sportsmockup from "../../assets/img/sportsfes.png"
 import sports2 from "../../assets/img/sports2.jpg"
 import sports3 from "../../assets/img/sports3.jpg"
 import sports4 from "../../assets/img/sport4.jpg"
