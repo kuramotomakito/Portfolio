@@ -440,7 +440,7 @@ footer div {
   }
 }
 @media screen and (max-width: 428px) {
-  .Works li div {
+  .Works li div p {
     font-size: 3.5vw;
   }
 }

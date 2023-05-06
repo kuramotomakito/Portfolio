@@ -1,8 +1,8 @@
-@use  "_mixin.scss" as m;
+@use "_mixin.scss" as m;
 @import "_variables.scss";
-.Works{
-    .keyvisual{
-        background-image:url(../img/workskey.jpg) ;
+.Works {
+  .keyvisual {
+    background-image: url(../img/workskey.jpg);
     position: relative;
     /*--スクロールをさせるため 高さ指定--*/
     background-size: 100%;
@@ -14,42 +14,41 @@
     // background-position: center center;
     /*--背景画像の位置--*/
     @include m.mq(sp) {
-        background-size: 151%;
-        background-position: center 0px;
+      background-size: 151%;
+      background-position: center 0px;
+    }
+  }
 
+  h1 {
+    font-size: 5vw;
+    color: $base-white;
+    span:hover {
+      color: darken($base-white, 30%);
     }
+  }
+  .catchcopy {
+    padding-top: 20%;
+    color: $base-white;
+    width: 86%;
+    @include m.mq(tab) {
+      padding-top: 40%;
     }
+    @include m.mq(sp) {
+      padding-top: 80%;
+    }
+  }
 
-    h1{
-        font-size: 5vw;
-        color:$base-white;
-        span:hover{
-                color: darken($base-white, 30% );
-            }        
+  h2 {
+    font-size: 3.5vw;
+    text-align: center;
+    margin: 5% 0;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    @include m.mq(sp) {
+      font-size: 6vw;
+      margin: 12% 0;
     }
-    .catchcopy{
-        padding-top: 20%;
-        color:$base-white;
-        width: 86%;
-        @include m.mq(tab) {
-            padding-top: 40%;
-                    }
-        @include m.mq(sp) {
-padding-top: 80%;
-        }
-    }
-                
-    h2{
-        font-size: 3.5vw;
-        text-align: center;
-        margin: 5% 0;
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        @include m.mq(sp) {
-            font-size: 6vw;
-            margin: 12% 0;
-        }
-    }
-ul{
+  }
+  ul {
     width: 70%;
     max-width: 940px;
     margin: 0 auto;
@@ -57,44 +56,49 @@ ul{
     flex-wrap: wrap;
     justify-content: space-around;
     @include m.mq(tab) {
-        width: 80%;
-                }
-    @include m.mq(sp) {
-display: block;
+      width: 80%;
     }
-}
-li{
-    width:40%;
+    @include m.mq(sp) {
+      display: block;
+    }
+  }
+  li {
+    width: 40%;
     position: relative;
     z-index: 1;
-    margin:  5% 0;
+    margin: 5% 0;
     filter: drop-shadow(0px 5px 5px $shadow-black);
     @include m.mq(sp) {
-width: 100%;    }
-    div{
-        width: 110%;
-        margin: 6% auto;
-        // padding-left: 10%;
-        // text-align: center;
-        p{
+      width: 100%;
+    }
+    div {
+      width: 110%;
+      margin: 6% auto;
+      // padding-left: 10%;
+      // text-align: center;
+      p {
         display: inline-block;
         font-size: 1.3vw;
         text-align: left;
         color: $base-black;
-        span{
-            font-size: 1.5vw;
-            @include m.mq(sp) {
-font-size: 3vw;                        }
-            }
+        span {
+          font-size: 1.5vw;
+          @include m.mq(sp) {
+            font-size: 3vw;
+          }
+        }
         @include m.mq(tab) {
-            font-size: 1.6vw;                    }
-                }
-        @include m.mq(sp) {
-font-size: 3.5vw;                    }
-    }
-    }
-}
+          font-size: 1.6vw;
+        }
 
-// @include m.mq(tab) {
-//     background-color: #ffbebe;
-//   }
+        @include m.mq(sp) {
+          font-size: 3.5vw;
+        }
+      }
+    }
+  }
+
+  // @include m.mq(tab) {
+  //     background-color: #ffbebe;
+  //   }
+}
