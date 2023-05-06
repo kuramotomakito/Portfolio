@@ -23,10 +23,12 @@ const Works = () => {
             <main className="Works">
                 <article>
                     <section className="keyvisual">
-                        <div className="catchcopy">
-                            {text}
+                        <div>
+                            <div className="catchcopy">
+                                {text}
+                            </div>
+                            <h1>Portfolio by <span>Minagi</span></h1>
                         </div>
-                        <h1>Portfolio by <span>Minagi</span></h1>
                     </section>
                     <section>
                         <h2>Works</h2>

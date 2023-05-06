@@ -47,8 +47,8 @@ const IkimonoPalette = () => {
                         </dl>
                         <p>課外活動では異なる専門技術を学ぶ者が集まり、学科と学年を超えた共創プロジェクトによるサービスの開発を行いました。このいきものパレットは「海の中の生き物の色を集めたい」という思いから、色センサーとBluetooth機能を使ったサービスを開発しました。このサービスは「第3回ナノコン応用コンテスト」で最優秀賞を獲得しました。</p>
                         <div><img src={ikimono4} alt="スポーツフェスティバルのサイトアクセス" /></div>
-                        <div><img src={ikimono} alt="スポーツフェスティバルのサイトtop" /></div>
                         <div><img src={ikimono2} alt="スポーツフェスティバルのサイト競技内容" /></div>
+                        <div><img src={ikimono} alt="スポーツフェスティバルのサイトtop" /></div>
                         <div><img src={ikimono3} alt="スポーツフェスティバルのサイトアクセス" /></div>
 
                     </section>
