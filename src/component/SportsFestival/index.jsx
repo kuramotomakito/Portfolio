@@ -1,7 +1,7 @@
 // import { Link } from "react-router-dom";
 import Header from "../../assets/Header"
 import Footer from "../../assets/Footer";
-import sports from "../../assets/img/sports.png"
+import sportsmockup from "../../assets/img/sports.png"
 import sports2 from "../../assets/img/sports2.jpg"
 import sports3 from "../../assets/img/sports3.jpg"
 import sports4 from "../../assets/img/sport4.jpg"
@@ -41,7 +41,7 @@ const SportsFestival = () => {
                             <dd><a href="https://github.com/kuramotomakito/supofesu">https://github.com/kuramotomakito/supofesu</a></dd>
                         </dl>
                         <p>本校でのイベントの一つ「JECスポーツフェスティバル」の公式サイト制作を行いました。初めて企画を一から考えコーディングした作品で赤色の背景と多くの写真を用いることで、わかりやすく元気なイメージが伝わるよう工夫しました。友達からのおすすめでSassを使い、CSSを効率よく書くことができました。</p>
-                        <div><img src={sports} alt="スポーツフェスティバルのサイトtop" /></div>
+                        <div><img src={sportsmockup} alt="スポーツフェスティバルのサイトtop" /></div>
                         <div className="mockup">
                             <div><img src={sports2} alt="スポーツフェスティバルのサイト競技内容" /></div>
                             <div><img src={sports3} alt="スポーツフェスティバルのサイトアクセス" /></div>
