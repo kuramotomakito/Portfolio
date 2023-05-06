@@ -19,9 +19,15 @@ import Stars25 from "../../assets/img/2Stars.svg"
 import Stars2 from "../../assets/img/2Stars.svg"
 import Stars15 from "../../assets/img/1.5Stars.svg"
 // import Typical from "react-typical";
+import { useTypewriter } from 'react-simple-typewriter'
 
 
 const About = () => {
+    const [text] = useTypewriter({
+        words: ["Minagi’s Profile."],
+        // typeSpeed: 20,
+        onLoopDone: () => console.log("done from typewriter hook")
+    });
     return (
         <>
             <Header />
@@ -29,12 +35,7 @@ const About = () => {
                 <article>
                     <section className="keyvisual">
                         <h1>
-                            {/* <Typical
-                                steps={[
-                                ]}
-                            /> */}
-                            {/* "Minagi’s Profile." */}
-
+                            {text}
                         </h1>
                     </section>
 
