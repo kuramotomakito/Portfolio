@@ -1,50 +1,51 @@
+@use "mixin" as m;
 @import "variables.scss";
 .Sport{
     .keyvisual{
         background-image:url(../img/sportkey.jpg);
         
             /*--スクロールをさせるため 高さ指定--*/
-            background-size: cover;
+            background-size: 100%;
             /*--背景画像のサイズ--*/
             background-attachment: fixed;
             /*--背景画像の固定--*/
             background-repeat: no-repeat;
             /*--背景画像の繰り返し--*/
-            background-position: center center;
+            // background-position: center center;
             /*--背景画像の位置--*/
+            @include m.mq(tab) {
+                background-size: 130%;
+                }
+                @include m.mq(sp) {
+                background-size: 220%;
+                background-position: center 0px;
+                    }
         }
     h1{
         padding-top: 30%;
         color: $base-white;
+        @include m.mq(tab) {
+            padding-top: 50%;
+            }
+            @include m.mq(sp) {
+                padding-top:80%;
+                            }
     }
     .summary{
 
-        h2{
-            display: inline-block;
-            text-align: left;
+    //     h2{
+    //         display: inline-block;
+    //         text-align: left;
 
-            span{
-                font-size: 1.5vw;
-            }
+    //         span{
+    //             font-size: 1.5vw;
+    //         }
         
-    }
+    // }
+        @include m.mq(tab) {
+            width: 80%;
+                    }
 
-        width: 65%;
-        margin: 0 auto;;
-        dl{
-            font-size: 1.5vw;
-            margin: 3% 0;
-            display: flex;
-            // align-items: baseline
-            align-items: flex-end;
-            dt{
-                font-weight: bold;
-                margin-right: 1%;
-            }
-        }
-        p{
-            margin: 5% 0 10% 0 ;
-        }
         .mockup{
             margin: 5% 0;
             display: flex;

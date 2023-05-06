@@ -6,7 +6,9 @@ import enoshima2 from "../../assets/img/enoshima2.jpg"
 import enohshima3 from "../../assets/img/enoshima3.jpg"
 import enoshima4 from "../../assets/img/enoshima4.jpg"
 import Typical from "react-typical";
-
+import react from "../../assets/img/React.svg"
+import Sass from "../../assets/img/SassIcon.svg"
+import CSS from "../../assets/img/CSSicon.svg"
 const Enoshimabbq = () => {
     return (
         <>
@@ -27,7 +29,11 @@ const Enoshimabbq = () => {
                         <h2>
                             <span>1年進級制作課題</span><br />「江ノ島マリーナ『サンカフェ』公式サイト」
                         </h2>
-                        <dl>
+                        <dl className="Technology">
+                            <dt>使用技術：</dt>
+                            <dd><ul><li><img src={react} alt="Reactjs" /></li><li><img src={CSS} alt="CSS" /></li><li><img src={Sass} alt="Sass" /></li></ul></dd>
+                        </dl>
+                        <dl className="github">
                             <dt>git:</dt>
                             <dd>https://github.com/kuramotomakito/-BBQ</dd>
                         </dl>

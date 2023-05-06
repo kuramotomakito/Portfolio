@@ -1,47 +1,9 @@
 @charset "UTF-8";
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-} */
-/*-------------------------------------*/
 body {
   background-color: #f6f6f6;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -53,9 +15,9 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-* {
-  padding: 0;
-  margin: 0;
+img {
+  width: 100%;
+  height: auto;
 }
 
 li {
@@ -99,27 +61,221 @@ header ul li {
   font-size: 1.8vw;
   padding: 0 20% 0 0;
 }
+@media screen and (max-width: 768px) {
+  header ul li {
+    font-size: 3vw;
+  }
+}
+@media screen and (max-width: 428px) {
+  header ul li {
+    font-size: 4vw;
+  }
+}
+header ul li a {
+  font-weight: 500;
+  color: #878585;
+  text-decoration: inherit;
+}
+header ul li a:hover {
+  color: black;
+}
 
+/*キービジュアル*/
 .keyvisual {
   height: 60vw;
   background-color: #d7d8f6;
 }
-.keyvisual .catchcopy, .keyvisual h1 {
+@media screen and (max-width: 768px) {
+  .keyvisual {
+    height: 100vw;
+  }
+}
+@media screen and (max-width: 428px) {
+  .keyvisual {
+    height: 200vw;
+  }
+}
+
+.catchcopy,
+h1 {
   padding-left: 1%;
   font-weight: bold;
   font-size: 7vw;
 }
 
-h2 {
-  text-align: center;
+/*サイト概要*/
+.Sport .summary,
+.Enoshima .summary,
+.Ikimono .summary,
+.Banner .summary {
+  width: 70%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .Sport .summary,
+.Enoshima .summary,
+.Ikimono .summary,
+.Banner .summary {
+    width: 80%;
+  }
+}
+.Sport .summary h2,
+.Enoshima .summary h2,
+.Ikimono .summary h2,
+.Banner .summary h2 {
   margin: 5% 0;
   font-size: 3vw;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: inline-block;
+  text-align: left;
 }
-
-img {
-  width: 100%;
-  height: auto;
+@media screen and (max-width: 428px) {
+  .Sport .summary h2,
+.Enoshima .summary h2,
+.Ikimono .summary h2,
+.Banner .summary h2 {
+    font-size: 4.1vw;
+    margin: 12% 0;
+  }
+}
+.Sport .summary h2 span,
+.Enoshima .summary h2 span,
+.Ikimono .summary h2 span,
+.Banner .summary h2 span {
+  font-size: 1.5vw;
+}
+@media screen and (max-width: 768px) {
+  .Sport .summary h2 span,
+.Enoshima .summary h2 span,
+.Ikimono .summary h2 span,
+.Banner .summary h2 span {
+    font-size: 2vw;
+  }
+}
+@media screen and (max-width: 428px) {
+  .Sport .summary h2 span,
+.Enoshima .summary h2 span,
+.Ikimono .summary h2 span,
+.Banner .summary h2 span {
+    font-size: 3vw;
+    margin-bottom: 10%;
+  }
+}
+.Sport .summary p,
+.Enoshima .summary p,
+.Ikimono .summary p,
+.Banner .summary p {
+  line-height: 231%;
+  margin: 5% 0;
+  font-size: 1.3vw;
+}
+@media screen and (max-width: 768px) {
+  .Sport .summary p,
+.Enoshima .summary p,
+.Ikimono .summary p,
+.Banner .summary p {
+    font-size: 2vw;
+  }
+}
+@media screen and (max-width: 428px) {
+  .Sport .summary p,
+.Enoshima .summary p,
+.Ikimono .summary p,
+.Banner .summary p {
+    margin: 15% 0;
+    font-size: 3vw;
+  }
+}
+.Sport .summary .Technology,
+.Enoshima .summary .Technology,
+.Ikimono .summary .Technology,
+.Banner .summary .Technology {
+  display: flex;
+  align-items: center;
+}
+.Sport .summary .Technology dt,
+.Enoshima .summary .Technology dt,
+.Ikimono .summary .Technology dt,
+.Banner .summary .Technology dt {
+  font-weight: bold;
+  margin-right: 1%;
+}
+@media screen and (max-width: 768px) {
+  .Sport .summary .Technology dt,
+.Enoshima .summary .Technology dt,
+.Ikimono .summary .Technology dt,
+.Banner .summary .Technology dt {
+    font-size: 2vw;
+  }
+}
+@media screen and (max-width: 428px) {
+  .Sport .summary .Technology dt,
+.Enoshima .summary .Technology dt,
+.Ikimono .summary .Technology dt,
+.Banner .summary .Technology dt {
+    font-size: 3vw;
+  }
+}
+.Sport .summary .Technology ul,
+.Enoshima .summary .Technology ul,
+.Ikimono .summary .Technology ul,
+.Banner .summary .Technology ul {
+  display: flex;
+}
+.Sport .summary .Technology ul li,
+.Enoshima .summary .Technology ul li,
+.Ikimono .summary .Technology ul li,
+.Banner .summary .Technology ul li {
+  margin: 0 3%;
+}
+.Sport .summary .github,
+.Sport .summary .URL,
+.Enoshima .summary .github,
+.Enoshima .summary .URL,
+.Ikimono .summary .github,
+.Ikimono .summary .URL,
+.Banner .summary .github,
+.Banner .summary .URL {
+  font-size: 1.5vw;
+  margin: 3% 0;
+  display: flex;
+  align-items: flex-end;
+}
+@media screen and (max-width: 768px) {
+  .Sport .summary .github,
+.Sport .summary .URL,
+.Enoshima .summary .github,
+.Enoshima .summary .URL,
+.Ikimono .summary .github,
+.Ikimono .summary .URL,
+.Banner .summary .github,
+.Banner .summary .URL {
+    font-size: 2vw;
+  }
+}
+@media screen and (max-width: 428px) {
+  .Sport .summary .github,
+.Sport .summary .URL,
+.Enoshima .summary .github,
+.Enoshima .summary .URL,
+.Ikimono .summary .github,
+.Ikimono .summary .URL,
+.Banner .summary .github,
+.Banner .summary .URL {
+    align-items: center;
+    font-size: 3vw;
+  }
+}
+.Sport .summary .github dt,
+.Sport .summary .URL dt,
+.Enoshima .summary .github dt,
+.Enoshima .summary .URL dt,
+.Ikimono .summary .github dt,
+.Ikimono .summary .URL dt,
+.Banner .summary .github dt,
+.Banner .summary .URL dt {
+  font-weight: bold;
+  margin-right: 1%;
 }
 
 /*Footer*/
@@ -135,18 +291,66 @@ footer div {
   font-size: 1.4vw;
 }
 
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+/*-------------------------------------*/
 .Works .keyvisual {
-  background-image: url(../img/keyvisual.png);
+  background-image: url(../img/workskey.jpg);
   position: relative;
   /*--スクロールをさせるため 高さ指定--*/
-  background-size: cover;
+  background-size: 100%;
   /*--背景画像のサイズ--*/
   background-attachment: fixed;
   /*--背景画像の固定--*/
   background-repeat: no-repeat;
   /*--背景画像の繰り返し--*/
-  background-position: center center;
   /*--背景画像の位置--*/
+}
+@media screen and (max-width: 428px) {
+  .Works .keyvisual {
+    background-size: 151%;
+    background-position: center 0px;
+  }
 }
 .Works h1 {
   font-size: 5vw;
@@ -160,12 +364,39 @@ footer div {
   color: rgb(220, 220, 220);
   width: 90%;
 }
+@media screen and (max-width: 768px) {
+  .Works .catchcopy {
+    padding-top: 40%;
+  }
+}
+@media screen and (max-width: 428px) {
+  .Works .catchcopy {
+    padding-top: 80%;
+  }
+}
+.Works h2 {
+  font-size: 3.5vw;
+  text-align: center;
+  margin: 5% 0;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 .Works ul {
   width: 70%;
+  max-width: 940px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+@media screen and (max-width: 768px) {
+  .Works ul {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 428px) {
+  .Works ul {
+    display: block;
+  }
 }
 .Works li {
   width: 40%;
@@ -173,6 +404,11 @@ footer div {
   z-index: 1;
   margin: 5% 0;
   filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.25));
+}
+@media screen and (max-width: 428px) {
+  .Works li {
+    width: 100%;
+  }
 }
 .Works li div {
   width: 110%;
@@ -187,22 +423,53 @@ footer div {
 .Works li div p span {
   font-size: 1.2vw;
 }
+@media screen and (max-width: 428px) {
+  .Works li div p span {
+    font-size: 2vw;
+  }
+}
+@media screen and (max-width: 428px) {
+  .Works li div p {
+    font-size: 3.5vw;
+  }
+}
 
 .About .keyvisual {
   background-image: url(../img/aboutkey.jpg);
   position: relative;
   /*--スクロールをさせるため 高さ指定--*/
-  background-size: cover;
+  background-size: 100%;
   /*--背景画像のサイズ--*/
   background-attachment: fixed;
   /*--背景画像の固定--*/
   background-repeat: no-repeat;
   /*--背景画像の繰り返し--*/
-  background-position: center center;
   /*--背景画像の位置--*/
+}
+@media screen and (max-width: 768px) {
+  .About .keyvisual {
+    background-image: url(../img/aboutkey2.jpg);
+    background-size: 120%;
+  }
 }
 .About h1 {
   padding-top: 30%;
+}
+@media screen and (max-width: 768px) {
+  .About h1 {
+    padding-top: 50%;
+  }
+}
+@media screen and (max-width: 428px) {
+  .About h1 {
+    padding-top: 80%;
+  }
+}
+.About h2 {
+  font-size: 3.5vw;
+  text-align: center;
+  margin: 5% 0;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .About .name {
   display: flex;
@@ -211,9 +478,23 @@ footer div {
   width: 70%;
   margin: 8% auto;
 }
+@media screen and (max-width: 428px) {
+  .About .name {
+    display: block;
+    margin: 18% auto;
+  }
+}
 .About .name h3 {
   width: 140%;
   font-size: 5vw;
+}
+@media screen and (max-width: 428px) {
+  .About .name h3 {
+    width: 100%;
+    font-size: 7vw;
+    text-align: center;
+    border-bottom: 2px solid rgb(39, 39, 39);
+  }
 }
 .About .name h3 ruby {
   padding-left: 5%;
@@ -224,14 +505,41 @@ footer div {
   border-left: 2px solid rgb(39, 39, 39);
   padding: 2% 0 2% 3%;
 }
+@media screen and (max-width: 428px) {
+  .About .name p {
+    border-left: none;
+    text-align: center;
+    font-size: 3vw;
+  }
+}
 .About .summary {
   font-size: 1.3vw;
   width: 70%;
   margin: 0 auto;
 }
+@media screen and (max-width: 768px) {
+  .About .summary {
+    font-size: 2vw;
+  }
+}
+@media screen and (max-width: 428px) {
+  .About .summary {
+    font-size: 3vw;
+  }
+}
 .About .summary p {
   line-height: 231%;
   margin-bottom: 5%;
+}
+@media screen and (max-width: 428px) {
+  .About .summary p {
+    margin-bottom: 10%;
+  }
+}
+@media screen and (max-width: 428px) {
+  .About .summary {
+    width: 80%;
+  }
 }
 .About .summary .prof dl {
   display: flex;
@@ -247,10 +555,20 @@ footer div {
   justify-content: flex-start;
   font-weight: bold;
 }
+@media screen and (max-width: 428px) {
+  .About .summary .prof dl dt {
+    width: 20%;
+  }
+}
 .About .summary .prof dl dd {
-  width: 65%;
+  width: 70%;
   padding: 2% 0 2% 0;
   margin: 0 0 10px 0;
+}
+@media screen and (max-width: 428px) {
+  .About .summary .prof dl dd {
+    width: 75%;
+  }
 }
 .About .summary .skills {
   /*レスポンシブ用*/
@@ -261,10 +579,21 @@ footer div {
   font-size: 2vw;
   margin: 5% 0 3% 0;
 }
+@media screen and (max-width: 428px) {
+  .About .summary .skills h4 {
+    font-size: 5vw;
+    margin: 8% 0;
+  }
+}
 .About .summary .skills div {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+@media screen and (max-width: 428px) {
+  .About .summary .skills div {
+    justify-content: space-around;
+  }
 }
 .About .summary .skills div dl {
   display: flex;
@@ -277,9 +606,29 @@ footer div {
   height: auto;
   margin-right: 1%;
 }
+@media screen and (max-width: 768px) {
+  .About .summary .skills div dt {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 428px) {
+  .About .summary .skills div dt {
+    width: 15vw;
+  }
+}
 .About .summary .skills div dd {
   width: 6vw;
   height: auto;
+}
+@media screen and (max-width: 768px) {
+  .About .summary .skills div dd {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 428px) {
+  .About .summary .skills div dd {
+    width: 20vw;
+  }
 }
 .About .summary .skills div dd span {
   font-size: 1vw;
@@ -289,42 +638,43 @@ footer div {
 .Sport .keyvisual {
   background-image: url(../img/sportkey.jpg);
   /*--スクロールをさせるため 高さ指定--*/
-  background-size: cover;
+  background-size: 100%;
   /*--背景画像のサイズ--*/
   background-attachment: fixed;
   /*--背景画像の固定--*/
   background-repeat: no-repeat;
   /*--背景画像の繰り返し--*/
-  background-position: center center;
   /*--背景画像の位置--*/
+}
+@media screen and (max-width: 768px) {
+  .Sport .keyvisual {
+    background-size: 130%;
+  }
+}
+@media screen and (max-width: 428px) {
+  .Sport .keyvisual {
+    background-size: 220%;
+    background-position: center 0px;
+  }
 }
 .Sport h1 {
   padding-top: 30%;
   color: rgb(220, 220, 220);
 }
-.Sport .summary {
-  width: 65%;
-  margin: 0 auto;
+@media screen and (max-width: 768px) {
+  .Sport h1 {
+    padding-top: 50%;
+  }
 }
-.Sport .summary h2 {
-  display: inline-block;
-  text-align: left;
+@media screen and (max-width: 428px) {
+  .Sport h1 {
+    padding-top: 80%;
+  }
 }
-.Sport .summary h2 span {
-  font-size: 1.5vw;
-}
-.Sport .summary dl {
-  font-size: 1.5vw;
-  margin: 3% 0;
-  display: flex;
-  align-items: flex-end;
-}
-.Sport .summary dl dt {
-  font-weight: bold;
-  margin-right: 1%;
-}
-.Sport .summary p {
-  margin: 5% 0 10% 0;
+@media screen and (max-width: 768px) {
+  .Sport .summary {
+    width: 80%;
+  }
 }
 .Sport .summary .mockup {
   margin: 5% 0;
@@ -335,35 +685,36 @@ footer div {
 .Enoshima .keyvisual {
   background-image: url(../img/enoshimakey.jpg);
   /*--スクロールをさせるため 高さ指定--*/
-  background-size: cover;
+  background-size: 100%;
   /*--背景画像のサイズ--*/
   background-attachment: fixed;
   /*--背景画像の固定--*/
   background-repeat: no-repeat;
   /*--背景画像の繰り返し--*/
-  background-position: center center;
   /*--背景画像の位置--*/
+}
+@media screen and (max-width: 428px) {
+  .Enoshima .keyvisual {
+    background-size: 267%;
+    background-position: center 0px;
+  }
 }
 .Enoshima h1 {
   padding-top: 30%;
   color: rgb(220, 220, 220);
 }
-.Enoshima .summary {
-  width: 70%;
-  margin: 0 auto;
+@media screen and (max-width: 768px) {
+  .Enoshima h1 {
+    padding-top: 50%;
+  }
+}
+@media screen and (max-width: 428px) {
+  .Enoshima h1 {
+    padding-top: 80%;
+  }
 }
 .Enoshima .summary h2 {
   text-align: left;
-}
-.Enoshima .summary dl {
-  font-size: 1.5vw;
-  margin: 3% 0;
-  display: flex;
-  align-items: flex-end;
-}
-.Enoshima .summary dl dt {
-  font-weight: bold;
-  margin-right: 1%;
 }
 .Enoshima .summary p {
   margin: 5% 0 10% 0;
@@ -377,7 +728,7 @@ footer div {
 .Ikimono .keyvisual {
   background-image: url(../img/ikimonokey.jpg);
   /*--スクロールをさせるため 高さ指定--*/
-  background-size: cover;
+  background-size: 100%;
   /*--背景画像のサイズ--*/
   background-attachment: fixed;
   /*--背景画像の固定--*/
@@ -386,26 +737,34 @@ footer div {
   background-position: center center;
   /*--背景画像の位置--*/
 }
+@media screen and (max-width: 768px) {
+  .Ikimono .keyvisual {
+    background-size: 135%;
+    background-position: center 0px;
+  }
+}
+@media screen and (max-width: 428px) {
+  .Ikimono .keyvisual {
+    background-size: 270%;
+    background-position: center 0px;
+  }
+}
 .Ikimono h1 {
   padding-top: 30%;
   color: rgb(220, 220, 220);
 }
-.Ikimono .summary {
-  width: 70%;
-  margin: 0 auto;
+@media screen and (max-width: 768px) {
+  .Ikimono h1 {
+    padding-top: 50%;
+  }
+}
+@media screen and (max-width: 428px) {
+  .Ikimono h1 {
+    padding-top: 100%;
+  }
 }
 .Ikimono .summary h2 {
   text-align: left;
-}
-.Ikimono .summary dl {
-  font-size: 1.5vw;
-  margin: 3% 0;
-  display: flex;
-  align-items: flex-end;
-}
-.Ikimono .summary dl dt {
-  font-weight: bold;
-  margin-right: 1%;
 }
 .Ikimono .summary p {
   margin: 5% 0 10% 0;
@@ -414,13 +773,12 @@ footer div {
 .Banner .keyvisual {
   background-image: url(../img/bannerkey.jpg);
   /*--スクロールをさせるため 高さ指定--*/
-  background-size: cover;
+  background-size: 100%;
   /*--背景画像のサイズ--*/
   background-attachment: fixed;
   /*--背景画像の固定--*/
   background-repeat: no-repeat;
   /*--背景画像の繰り返し--*/
-  background-position: center center;
   /*--背景画像の位置--*/
 }
 .Banner h1 {

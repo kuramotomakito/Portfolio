@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Header from "../../assets/Header"
 import Footer from "../../assets/Footer";
-import Sport from "../../assets/img/Sports.png"
+import Sport from "../../assets/img/Spoets.png"
 import Enoshima from "../../assets/img/Enoshima.png"
 import Ikimono from "../../assets/img/Ikimono.png"
 import Banner from "../../assets/img/Banner.png"

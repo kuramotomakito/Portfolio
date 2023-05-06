@@ -5,13 +5,13 @@
         background-image:url(../img/bannerkey.jpg);
         
             /*--スクロールをさせるため 高さ指定--*/
-            background-size: cover;
+            background-size: 100%;
             /*--背景画像のサイズ--*/
             background-attachment: fixed;
             /*--背景画像の固定--*/
             background-repeat: no-repeat;
             /*--背景画像の繰り返し--*/
-            background-position: center center;
+            // background-position: center center;
             /*--背景画像の位置--*/
         }
     h1{

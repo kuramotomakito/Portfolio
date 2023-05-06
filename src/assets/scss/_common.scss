@@ -1,3 +1,223 @@
+@use "mixin" as m;
+@import "_variables.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #f6f6f6;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: $base-black;
+  // background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  // -webkit-font-smoothing: antialiased;
+  // -moz-osx-font-smoothing: grayscale;
+  // -webkit-text-size-adjust: 100%;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+li {
+  list-style-type: none;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+a {
+  font-weight: 500;
+  color: #878585;
+  text-decoration: inherit;
+}
+a:hover {
+  color: darken(#cccccc, 100%);
+}
+
+/*headerの中*/
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 99999;
+  width: 90%;
+  margin: 3% 5%;
+  padding-top: 2%;
+  div {
+    width: 10%;
+    // padding:0 5% 0 0;
+  }
+  ul {
+    text-align: right;
+    position: absolute;
+    right: 0;
+    justify-content: space-around;
+    display: flex;
+    width: auto;
+    li {
+      font-size: 1.8vw;
+      padding: 0 20% 0 0;
+      @include m.mq(tab) {
+        font-size: 3vw;
+      }
+      @include m.mq(sp) {
+        font-size: 4vw;
+      }
+      a {
+        font-weight: 500;
+        color: #878585;
+        text-decoration: inherit;
+      }
+      a:hover {
+        color: darken(#cccccc, 100%);
+      }
+    }
+  }
+}
+/*キービジュアル*/
+.keyvisual {
+  height: 60vw;
+  background-color: #d7d8f6;
+  @include m.mq(tab) {
+    height: 100vw;
+  }
+  @include m.mq(sp) {
+    height: 200vw;
+  }
+}
+.catchcopy,
+h1 {
+  padding-left: 1%;
+  font-weight: bold;
+  font-size: 7vw;
+}
+
+/*サイト概要*/
+
+.Sport,
+.Enoshima,
+.Ikimono,
+.Banner {
+  .summary {
+    width: 70%;
+    margin: 0 auto;
+    @include m.mq(tab) {
+      width: 80%;
+    }
+
+    h2 {
+      margin: 5% 0;
+      font-size: 3vw;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      @include m.mq(sp) {
+        font-size: 4.1vw;
+        margin: 12% 0;
+      }
+      display: inline-block;
+      text-align: left;
+      span {
+        font-size: 1.5vw;
+        @include m.mq(tab) {
+          font-size: 2vw;
+        }
+        @include m.mq(sp) {
+          font-size: 3vw;
+          margin-bottom: 10%;
+        }
+      }
+    }
+
+    p {
+      line-height: 231%;
+      margin: 5% 0;
+      font-size: 1.3vw;
+      @include m.mq(tab) {
+        font-size: 2vw;
+      }
+      @include m.mq(sp) {
+        margin: 15% 0;
+        font-size: 3vw;
+      }
+    }
+
+    .Technology {
+      display: flex;
+      align-items: center;
+      dt {
+        @include m.mq(tab) {
+          font-size: 2vw;
+        }
+        @include m.mq(sp) {
+          font-size: 3vw;
+        }
+        font-weight: bold;
+        margin-right: 1%;
+      }
+      ul {
+        display: flex;
+        li {
+          margin: 0 3%;
+        }
+      }
+    }
+    .github,
+    .URL {
+      font-size: 1.5vw;
+      margin: 3% 0;
+      display: flex;
+      align-items: flex-end;
+      // align-items: baseline
+      @include m.mq(tab) {
+        font-size: 2vw;
+      }
+      @include m.mq(sp) {
+        align-items: center;
+        font-size: 3vw;
+      }
+
+      dt {
+        font-weight: bold;
+        margin-right: 1%;
+      }
+    }
+  }
+}
+
+/*Footer*/
+footer {
+  margin-top: 8%;
+  padding: 5% 0;
+  width: 100%;
+  background-color: #918e8e;
+  div {
+    text-align: center;
+    margin: auto;
+    font-size: 1.4vw;
+  }
+}
+
+//ダークモードの時
+// @media (prefers-color-scheme:dark) {
+//   body {
+//     color: #ffffff;
+//     background-color: #213547;
+//   }
+//   a:hover {
+//     color: #747bff;
+//   }
+//   button {
+//     background-color: #f9f9f9;
+//   }
+//   .keyvisual{
+//     background-color: #121682;
+//   }
+//   }
 /* #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -56,114 +276,3 @@
 //   -moz-osx-font-smoothing: grayscale;
 //   -webkit-text-size-adjust: 100%;
 // }
-@import "_variables.scss";
-body{
-  background-color:#f6f6f6;
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color:$base-black;
-  // background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  // -webkit-font-smoothing: antialiased;
-  // -moz-osx-font-smoothing: grayscale;
-  // -webkit-text-size-adjust: 100%;
-  
-}
-
-*{
-  padding: 0;
-  margin: 0;
-}
-li{
-    list-style-type: none;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-  }
-  a {
-    font-weight: 500;
-    color: #878585;
-    text-decoration: inherit;
-  }
-  a:hover {
-    color: darken(#cccccc ,100%);
-  }
-  /*headerの中*/
-  header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position:fixed;
-    z-index: 99999;
-    width: 90%;
-    margin:3% 5%;
-    padding-top: 2%;
-    div{
-      width: 10%;
-      // padding:0 5% 0 0;
-
-    }
-  ul{
-    text-align: right;
-    position: absolute;
-    right: 0;
-    justify-content: space-around;
-    display: flex;
-    width: auto;
-    li{
-      font-size: 1.8vw;
-    padding:0 20% 0 0;
-  }}
-}
-.keyvisual{
-  height:60vw;
-  background-color: #d7d8f6;
-.catchcopy,h1{
-  padding-left: 1%;
-  font-weight: bold;
-  font-size:7vw;
-}
-
-}
-h2{
-  text-align: center;
-  margin: 5% 0;
-  font-size: 3vw;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-img{
-  width: 100%;
-  height: auto;
-}
-  /*Footer*/
-  footer{
-    margin-top: 8%;
-    padding: 5% 0;
-    width: 100%;
-    background-color: #918e8e;
-    div{
-  text-align: center;
-  margin: auto;
-  font-size: 1.4vw;
-  }}
-
-//ダークモードの時
-  // @media (prefers-color-scheme:dark) {
-  //   body {
-  //     color: #ffffff;
-  //     background-color: #213547;
-  //   }
-  //   a:hover {
-  //     color: #747bff;
-  //   }
-  //   button {
-  //     background-color: #f9f9f9;
-  //   }
-  //   .keyvisual{
-  //     background-color: #121682;
-  //   }
-  //   }

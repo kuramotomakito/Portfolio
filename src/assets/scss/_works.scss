@@ -1,18 +1,23 @@
+@use  "_mixin.scss" as m;
 @import "_variables.scss";
 .Works{
     .keyvisual{
-        background-image:url(../img/keyvisual.png) ;
+        background-image:url(../img/workskey.jpg) ;
     position: relative;
-
     /*--スクロールをさせるため 高さ指定--*/
-    background-size: cover;
+    background-size: 100%;
     /*--背景画像のサイズ--*/
     background-attachment: fixed;
     /*--背景画像の固定--*/
     background-repeat: no-repeat;
     /*--背景画像の繰り返し--*/
-    background-position: center center;
+    // background-position: center center;
     /*--背景画像の位置--*/
+    @include m.mq(sp) {
+        background-size: 151%;
+        background-position: center 0px;
+
+    }
     }
 
     h1{
@@ -20,21 +25,39 @@
         color:$base-white;
         span:hover{
                 color: darken($base-white, 30% );
-            }
-
-        
+            }        
     }
     .catchcopy{
         padding-top: 20%;
         color:$base-white;
         width: 90%;
+        @include m.mq(tab) {
+            padding-top: 40%;
+                    }
+        @include m.mq(sp) {
+padding-top: 80%;
+        }
+    }
+                
+    h2{
+        font-size: 3.5vw;
+        text-align: center;
+        margin: 5% 0;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
 ul{
     width: 70%;
+    max-width: 940px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around
+    justify-content: space-around;
+    @include m.mq(tab) {
+        width: 80%;
+                }
+    @include m.mq(sp) {
+display: block;
+    }
 }
 li{
     width:40%;
@@ -42,7 +65,8 @@ li{
     z-index: 1;
     margin:  5% 0;
     filter: drop-shadow(0px 5px 5px $shadow-black);
-
+    @include m.mq(sp) {
+width: 100%;    }
     div{
         width: 110%;
         margin: 6% auto;
@@ -51,12 +75,21 @@ li{
         p{
         display: inline-block;
         font-size: 1.3vw;
+        
         text-align: left;
         span{
             font-size: 1.2vw;
+            @include m.mq(sp) {
+font-size: 2vw;                        }
         }
+        @include m.mq(sp) {
+font-size: 3.5vw;                    }
         color:$base-black;
     }
     }
 }
+
+// @include m.mq(tab) {
+//     background-color: #ffbebe;
+//   }
 }

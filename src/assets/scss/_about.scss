@@ -1,134 +1,202 @@
+@use "_mixin.scss" as m;
 @import "_variables.scss";
-.About{
-    .keyvisual{
-        background-image:url(../img/aboutkey.jpg) ;
+.About {
+  .keyvisual {
+    background-image: url(../img/aboutkey.jpg);
     position: relative;
 
     /*--スクロールをさせるため 高さ指定--*/
-    background-size: cover;
+    background-size: 100%;
     /*--背景画像のサイズ--*/
     background-attachment: fixed;
     /*--背景画像の固定--*/
     background-repeat: no-repeat;
     /*--背景画像の繰り返し--*/
-    background-position: center center;
+    // background-position: center center;
     /*--背景画像の位置--*/
+    @include m.mq(tab) {
+      background-image: url(../img/aboutkey2.jpg);
+      background-size: 120%;
     }
-    h1{
-        padding-top: 30%;
+  }
+  h1 {
+    padding-top: 30%;
+    @include m.mq(tab) {
+      padding-top: 50%;
     }
-    .name{
-display: flex;
-align-items: center;
-justify-content: space-between;
-width: 70%;
-margin: 8% auto;
-    h3{
-        width: 140%;
-        font-size: 5vw;
-
-        ruby{
-            padding-left: 5%;
-            font-size: 2vw;
-        }
+    @include m.mq(sp) {
+      padding-top: 80%;
     }
-p{
-    font-size: 1.6vw;
-    border-left: 2px solid $base-black;
-    padding: 2% 0 2% 3%;
+  }
+  h2{
+    font-size: 3.5vw;
+    text-align: center;
+    margin: 5% 0;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+  .name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    margin: 8% auto;
+    @include m.mq(sp) {
+      display: block;
+      margin: 18% auto;
+    //   margin-bottom: 15%;
     }
-    .summary{
-        font-size: 1.3vw;
-        p{
-            line-height: 231%;
-            margin-bottom: 5%;
-        }
+    h3 {
+      width: 140%;
+      font-size: 5vw;
+      @include m.mq(sp) {
+        width: 100%;
+        font-size: 7vw;
+        text-align: center;
+border-bottom: 2px solid $base-black;
+      }
+      ruby {
+        padding-left: 5%;
+        font-size: 2vw;
+      }
+    }
+    p {
+      font-size: 1.6vw;
+      border-left: 2px solid $base-black;
+      padding: 2% 0 2% 3%;
+      @include m.mq(sp) {
+        border-left: none;
+        text-align: center;
+        font-size: 3vw;
+      }
+    }
+  }
+  .summary {
+    font-size: 1.3vw;
+    @include m.mq(tab) {
+font-size: 2vw;                }
+    @include m.mq(sp) {
+        font-size: 3vw;
+      }
+    p {
+      line-height: 231%;
+      margin-bottom: 5%;
+      @include m.mq(sp) {
+margin-bottom: 10%;
+      }
+    }
 
-        width: 70%;
+    width: 70%;
+    margin: 0 auto;
+    @include m.mq(sp) {
+      width: 80%;
+    }
+    .prof {
+      dl {
+        display: flex;
+        flex-wrap: wrap;
         margin: 0 auto;
-        .prof{
-            dl{
-            display: flex;
-            flex-wrap: wrap;
-            margin: 0 auto;
-            dt{
-                width: 15%;
-                padding: 2% 5% 2% 0 ;
-                margin: 0 0 10px 0;
-                display: flex;
-                align-items: center;
-                justify-content: flex-start;
-                font-weight: bold;
-            }
-            dd{
-                width: 65%;
-                padding: 2% 0 2% 0;
-                margin: 0 0 10px 0;
-
-            }
+        dt {
+          width: 15%;
+          padding: 2% 5% 2% 0;
+          margin: 0 0 10px 0;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          font-weight: bold;
+          @include m.mq(sp) {
+width: 20%;
+          }
         }
+        dd {
+          width: 70%;
+          padding: 2% 0 2% 0;
+          margin: 0 0 10px 0;
+          @include m.mq(sp) {
+width: 75%;
+          }
+        }
+      }
     }
-        .skills{
-            h4{
-                text-align: center;
-                text-shadow: 0px 4px 4px $shadow-black;
-                font-size: 2vw;
-                margin: 5% 0 3% 0;
-            }
-            div{
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-
-                // margin: 0 auto;
-                dl{
-                    display: flex;
-                    align-items: center;
-                    margin-right: 3%;
-                    // width: 25%;
-                    margin: 3% 2%;
-    
-                }
-                dt{
-                    width: 5vw;
-                    height: auto;
-                    margin-right: 1%;
-                }
-                dd{
-                    width: 6vw;
-                    height: auto;
-                    span{
-                        font-size: 1vw;
-                        position: absolute;
+    .skills {
+      h4 {
+        text-align: center;
+        text-shadow: 0px 4px 4px $shadow-black;
+        font-size: 2vw;
+        margin: 5% 0 3% 0;
+        @include m.mq(sp) {
+            font-size: 5vw;
+            margin: 8% 0;
+          }
+      }
+      div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        // margin: 0 auto;
+        @include m.mq(sp) {
+justify-content: space-around;
+        }
+        dl {
+          display: flex;
+          align-items: center;
+          margin-right: 3%;
+          // width: 25%;
+          margin: 3% 2%;
+//           @include m.mq(sp) {
+// margin: 3% 0;                    }
+          
+        }
+        dt {
+          width: 5vw;
+          height: auto;
+          margin-right: 1%;
+          @include m.mq(tab) {
+width: 40%;
+        }
+        @include m.mq(sp) {
+            width: 15vw;
                     }
-                }
-            }
-        /*レスポンシブ用*/
-        //     div{
-        //         display: flex;
-        //         width: 50%;
-        //         dl{
-        //             display: flex;
-        //             align-items: center;
-        //             margin-right: 10%;
-        //             width: 50%;
-    
-        //         }
-        //         dt{
-        //             width: 100%;
-        //             height: auto;
-        //         }
-        //         dd{
-        //             width: 120%;
-        //             height: auto;
-        //             span{
-        //                 font-size: 1vw;
-        //                 position: absolute;
-        //             }
-        //         }
+        }
+        dd {
+          width: 6vw;
+          height: auto;
+          @include m.mq(tab) {
+width: 50%;
+        }
+        @include m.mq(sp) {
+            width: 20vw;
+                    }
+          span {
+            font-size: 1vw;
+            position: absolute;
+          }
+        }
+      }
+      /*レスポンシブ用*/
+      //     div{
+      //         display: flex;
+      //         width: 50%;
+      //         dl{
+      //             display: flex;
+      //             align-items: center;
+      //             margin-right: 10%;
+      //             width: 50%;
 
-        // }
+      //         }
+      //         dt{
+      //             width: 100%;
+      //             height: auto;
+      //         }
+      //         dd{
+      //             width: 120%;
+      //             height: auto;
+      //             span{
+      //                 font-size: 1vw;
+      //                 position: absolute;
+      //             }
+      //         }
+
+      // }
     }
-    }
+  }
 }

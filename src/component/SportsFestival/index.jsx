@@ -1,11 +1,15 @@
 // import { Link } from "react-router-dom";
 import Header from "../../assets/Header"
 import Footer from "../../assets/Footer";
-import sports from "../../assets/img/sports.jpg"
+import sports from "../../assets/img/sports.png"
 import sports2 from "../../assets/img/sports2.jpg"
 import sports3 from "../../assets/img/sports3.jpg"
 import sports4 from "../../assets/img/sport4.jpg"
 import Typical from "react-typical";
+import HTML from "../../assets/img/HTML.svg"
+import CSS from "../../assets/img/CSSicon.svg"
+import js from "../../assets/img/JS.svg"
+import Sass from "../../assets/img/SassIcon.svg"
 
 // import sportlink from "https://github.com/kuramotomakito/supofesu"
 const SportsFestival = () => {
@@ -18,7 +22,7 @@ const SportsFestival = () => {
                         <h1>
                             <Typical
                                 steps={[
-                                    "SportsFestival."
+                                    "Sports  Festival."
                                 ]}
                             />
                         </h1>
@@ -27,8 +31,11 @@ const SportsFestival = () => {
                         <h2>
                             <span>1年前期課題</span><br />「スポーツフェスティバル公式サイト」
                         </h2>
-
-                        <dl>
+                        <dl className="Technology">
+                            <dt>使用技術：</dt>
+                            <dd><ul><li><img src={HTML} alt="HTML" /></li><li><img src={CSS} alt="CSS" /></li><li><img src={js} alt="Javascript" /></li><li><img src={Sass} alt="Sass" /></li></ul></dd>
+                        </dl>
+                        <dl className="github">
                             <dt>git:</dt>
                             <dd><a href="https://github.com/kuramotomakito/supofesu">https://github.com/kuramotomakito/supofesu</a></dd>
                         </dl>

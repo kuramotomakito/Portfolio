@@ -1,3 +1,4 @@
+@use "mixin"as m;
 @import "variables.scss";
 
 .Ikimono{
@@ -5,7 +6,7 @@
         background-image:url(../img/ikimonokey.jpg);
         
             /*--スクロールをさせるため 高さ指定--*/
-            background-size: cover;
+            background-size: 100%;
             /*--背景画像のサイズ--*/
             background-attachment: fixed;
             /*--背景画像の固定--*/
@@ -13,30 +14,40 @@
             /*--背景画像の繰り返し--*/
             background-position: center center;
             /*--背景画像の位置--*/
+            @include m.mq(tab) {
+                background-size: 135%;
+                background-position: center 0px;
+              }
+              @include m.mq(sp) {
+                background-size: 270%;
+                background-position: center 0px;
+              }
         }
     h1{
         padding-top: 30%;
         color: $base-white;
-
+        @include m.mq(tab) {
+ padding-top:50% ;
+          }
+          @include m.mq(sp) {
+padding-top: 100%;
+          }
     }
     .summary{
-
-        width: 70%;
-        margin: 0 auto;
     h2{
         text-align: left;
     }
-    dl{
-        font-size: 1.5vw;
-        margin: 3% 0;
-        display: flex;
-        // align-items: baseline
-        align-items: flex-end;
-        dt{
-            font-weight: bold;
-            margin-right: 1%;
-        }
-    }
+    // dl{
+    //     font-size: 1.5vw;
+    //     margin: 3% 0;
+    //     display: flex;
+    //     // align-items: baseline
+    //     align-items: flex-end;
+    //     dt{
+    //         font-weight: bold;
+    //         margin-right: 1%;
+    //     }
+    // }
     p{
         margin: 5% 0 10% 0 ;
     }
