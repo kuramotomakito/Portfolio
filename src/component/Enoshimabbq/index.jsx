@@ -5,7 +5,7 @@ import enoshima from "../../assets/img/enoshima.jpg"
 import enoshima2 from "../../assets/img/enoshima2.jpg"
 import enohshima3 from "../../assets/img/enoshima3.jpg"
 import enoshima4 from "../../assets/img/enoshima4.jpg"
-import Typical from "react-typical";
+// import Typical from "react-typical";
 import react from "../../assets/img/React.svg"
 import Sass from "../../assets/img/SassIcon.svg"
 import CSS from "../../assets/img/CSSicon.svg"
@@ -17,11 +17,8 @@ const Enoshimabbq = () => {
                 <article>
                     <section className="keyvisual">
                         <h1>
-                            <Typical
-                                steps={[
-                                    "EnoshimaBBQ."
-                                ]}
-                            />
+                            EnoshimaBBQ.
+
 
                         </h1>
                     </section>

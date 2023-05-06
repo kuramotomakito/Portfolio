@@ -18,7 +18,7 @@ import Stars3 from "../../assets/img/3Stars.svg"
 import Stars25 from "../../assets/img/2Stars.svg"
 import Stars2 from "../../assets/img/2Stars.svg"
 import Stars15 from "../../assets/img/1.5Stars.svg"
-import Typical from "react-typical";
+// import Typical from "react-typical";
 
 
 const About = () => {
@@ -29,11 +29,12 @@ const About = () => {
                 <article>
                     <section className="keyvisual">
                         <h1>
-                            <Typical
+                            {/* <Typical
                                 steps={[
-                                    "Minagi’s Profile."
                                 ]}
-                            />
+                            /> */}
+                            {/* "Minagi’s Profile." */}
+
                         </h1>
                     </section>
 

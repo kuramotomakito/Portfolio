@@ -5,7 +5,7 @@ import ikimono from "../../assets/img/ikimono.jpg"
 import ikimono2 from "../../assets/img/ikimono2.jpg"
 import ikimono3 from "../../assets/img/ikimono3.jpg"
 import ikimono4 from "../../assets/img/ikimono4.jpg"
-import Typical from "react-typical";
+// import Typical from "react-typical";
 import HTML from "../../assets/img/HTML.svg"
 import CSS from "../../assets/img/CSSicon.svg"
 import js from "../../assets/img/JS.svg"
@@ -17,11 +17,14 @@ const IkimonoPalette = () => {
             <main className="Ikimono">
                 <article>
                     <section className="keyvisual">
-                        <h1> <Typical
+                        <h1>
+                            Ikimono  Palette.
+                            {/* <Typical
                             steps={[
-                                "Ikimono  Palette."
+                                ""
                             ]}
-                        /></h1>
+                        /> */}
+                        </h1>
                     </section>
                     <section className="summary">
                         <h2>

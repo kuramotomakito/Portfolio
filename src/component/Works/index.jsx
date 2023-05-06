@@ -5,20 +5,40 @@ import Sport from "../../assets/img/Spoets.png"
 import Enoshima from "../../assets/img/Enoshima.png"
 import Ikimono from "../../assets/img/Ikimono.png"
 import Banner from "../../assets/img/Banner.png"
-import Typical from "react-typical";
-const Works = () => {
+// import Typewriter from 'react-simple-typewriter'
+import { useTypewriter } from 'react-simple-typewriter'
 
+// import 'react-simple-typewriter/dist/index.css'
+
+
+const Works = () => {
+    const [text] = useTypewriter({
+        words: ["halloworld"],
+
+        // typeSpeed: 20,
+        onLoopDone: () => console.log("done from typewriter hook")
+    });
     return (
         <>
             <Header />
             <main className="Works">
                 <article>
                     <section className="keyvisual">
-                        <div className="catchcopy"><Typical
-                            steps={[
-                                "My life is lovely story,happy and full of incident."
-                            ]}
-                        /></div>
+                        <div className="catchcopy">
+                            {/* <Typewriter
+                                loop
+                                cursor
+                                cursorStyle='_'
+                                typeSpeed={70}
+                                deleteSpeed={50}
+                                delaySpeed={1000}
+                                words={['aaaaaaaaaaaaaaaaaaaaa']}
+                                onLoop={(loopCount) =>
+                                    console.log(`Just completed loop ${loopCount}`)
+                                }
+                            /> */}
+                            {text}
+                        </div>
                         <h1>Portfolio by <span>Minagi</span></h1>
                     </section>
                     <section>

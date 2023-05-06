@@ -5,7 +5,7 @@ import sports from "../../assets/img/sports.png"
 import sports2 from "../../assets/img/sports2.jpg"
 import sports3 from "../../assets/img/sports3.jpg"
 import sports4 from "../../assets/img/sport4.jpg"
-import Typical from "react-typical";
+// import Typical from "react-typical";
 import HTML from "../../assets/img/HTML.svg"
 import CSS from "../../assets/img/CSSicon.svg"
 import js from "../../assets/img/JS.svg"
@@ -20,12 +20,13 @@ const SportsFestival = () => {
                 <article>
                     <section className="keyvisual">
                         <h1>
-                            <Typical
+                            {/* <Typical
                                 steps={[
-                                    "Sports  Festival."
+                                    
                                 ]}
-                            />
+                            /> */}
                         </h1>
+                        {/* "Sports  Festival." */}
                     </section>
                     <section className="summary">
                         <h2>

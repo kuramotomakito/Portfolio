@@ -1,7 +1,7 @@
 // import { Link } from "react-router-dom";
 import Header from "../../assets/Header"
 import Footer from "../../assets/Footer";
-import Typical from "react-typical";
+// import Typical from "react-typical";
 
 const BannerDesign = () => {
     return (
@@ -11,11 +11,12 @@ const BannerDesign = () => {
                 <article>
                     <section className="keyvisual">
                         <h1>
-                            <Typical
+                            {/* "BannerDesign." */}
+                            {/* <Typical
                                 steps={[
-                                    "BannerDesign."
+                                    
                                 ]}
-                            />
+                            /> */}
                         </h1>
                     </section>
                     <section className="summary">
