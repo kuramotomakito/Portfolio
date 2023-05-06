@@ -179,6 +179,9 @@ width: 50%;
           span {
             font-size: 1vw;
             position: absolute;
+                    @include m.mq(sp) {
+            font-size: 3vw;
+                    }
           }
         }
       }

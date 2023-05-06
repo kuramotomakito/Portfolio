@@ -79,16 +79,18 @@ width: 100%;    }
         p{
         display: inline-block;
         font-size: 1.3vw;
-        
         text-align: left;
+        color: $base-black;
         span{
-            font-size: 1.2vw;
+            font-size: 1.5vw;
             @include m.mq(sp) {
 font-size: 3vw;                        }
-        }
+            }
+        @include m.mq(tab) {
+            font-size: 1.6vw;                    }
+                }
         @include m.mq(sp) {
 font-size: 3.5vw;                    }
-        color:$base-black;
     }
     }
 }
@@ -96,4 +98,3 @@ font-size: 3.5vw;                    }
 // @include m.mq(tab) {
 //     background-color: #ffbebe;
 //   }
-}

@@ -63,7 +63,7 @@ header ul li {
 }
 @media screen and (max-width: 768px) {
   header ul li {
-    font-size: 3vw;
+    font-size: 2.8vw;
   }
 }
 @media screen and (max-width: 428px) {
@@ -427,15 +427,20 @@ footer div {
   color: rgb(39, 39, 39);
 }
 .Works li div p span {
-  font-size: 1.2vw;
+  font-size: 1.5vw;
 }
 @media screen and (max-width: 428px) {
   .Works li div p span {
     font-size: 3vw;
   }
 }
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 768px) {
   .Works li div p {
+    font-size: 1.6vw;
+  }
+}
+@media screen and (max-width: 428px) {
+  .Works li div {
     font-size: 3.5vw;
   }
 }
@@ -651,6 +656,11 @@ footer div {
 .About .summary .skills div dd span {
   font-size: 1vw;
   position: absolute;
+}
+@media screen and (max-width: 428px) {
+  .About .summary .skills div dd span {
+    font-size: 3vw;
+  }
 }
 
 .Sport .keyvisual {
