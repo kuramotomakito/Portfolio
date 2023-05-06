@@ -9,7 +9,15 @@ import enoshima4 from "../../assets/img/enoshima4.jpg"
 import react from "../../assets/img/React.svg"
 import Sass from "../../assets/img/SassIcon.svg"
 import CSS from "../../assets/img/CSSicon.svg"
+import { useTypewriter } from 'react-simple-typewriter'
+
 const Enoshimabbq = () => {
+    const [text] = useTypewriter({
+        words: ["Enoshima BBQ."],
+
+        // typeSpeed: 20,
+        onLoopDone: () => console.log("done from typewriter hook")
+    });
     return (
         <>
             <Header />
@@ -17,9 +25,7 @@ const Enoshimabbq = () => {
                 <article>
                     <section className="keyvisual">
                         <h1>
-                            EnoshimaBBQ.
-
-
+                            {text}
                         </h1>
                     </section>
                     <section className="summary">

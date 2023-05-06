@@ -2,8 +2,15 @@
 import Header from "../../assets/Header"
 import Footer from "../../assets/Footer";
 // import Typical from "react-typical";
+import { useTypewriter } from 'react-simple-typewriter'
 
 const BannerDesign = () => {
+    const [text] = useTypewriter({
+        words: ["BannerDesign."],
+
+        // typeSpeed: 20,
+        onLoopDone: () => console.log("done from typewriter hook")
+    });
     return (
         <>
             <Header />
@@ -11,12 +18,7 @@ const BannerDesign = () => {
                 <article>
                     <section className="keyvisual">
                         <h1>
-                            {/* "BannerDesign." */}
-                            {/* <Typical
-                                steps={[
-                                    
-                                ]}
-                            /> */}
+                            {text}
                         </h1>
                     </section>
                     <section className="summary">

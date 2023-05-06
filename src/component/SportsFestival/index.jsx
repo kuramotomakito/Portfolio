@@ -10,9 +10,15 @@ import HTML from "../../assets/img/HTML.svg"
 import CSS from "../../assets/img/CSSicon.svg"
 import js from "../../assets/img/JS.svg"
 import Sass from "../../assets/img/SassIcon.svg"
+import { useTypewriter } from 'react-simple-typewriter'
 
-// import sportlink from "https://github.com/kuramotomakito/supofesu"
 const SportsFestival = () => {
+    const [text] = useTypewriter({
+        words: ["Sports  Festival."],
+
+        // typeSpeed: 20,
+        onLoopDone: () => console.log("done from typewriter hook")
+    });
     return (
         <>
             <Header />
@@ -20,13 +26,9 @@ const SportsFestival = () => {
                 <article>
                     <section className="keyvisual">
                         <h1>
-                            {/* <Typical
-                                steps={[
-                                    
-                                ]}
-                            /> */}
+                            {text}
                         </h1>
-                        {/* "Sports  Festival." */}
+
                     </section>
                     <section className="summary">
                         <h2>

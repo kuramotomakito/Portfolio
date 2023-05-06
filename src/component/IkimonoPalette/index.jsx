@@ -10,7 +10,15 @@ import HTML from "../../assets/img/HTML.svg"
 import CSS from "../../assets/img/CSSicon.svg"
 import js from "../../assets/img/JS.svg"
 import Cprass from "../../assets/img/C++.svg"
+import { useTypewriter } from 'react-simple-typewriter'
+
 const IkimonoPalette = () => {
+    const [text] = useTypewriter({
+        words: ["Ikimono  Palette."],
+
+        // typeSpeed: 20,
+        onLoopDone: () => console.log("done from typewriter hook")
+    });
     return (
         <>
             <Header />
@@ -18,12 +26,7 @@ const IkimonoPalette = () => {
                 <article>
                     <section className="keyvisual">
                         <h1>
-                            Ikimono  Palette.
-                            {/* <Typical
-                            steps={[
-                                ""
-                            ]}
-                        /> */}
+                            {text}
                         </h1>
                     </section>
                     <section className="summary">
